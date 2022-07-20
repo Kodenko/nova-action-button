@@ -46,16 +46,6 @@ class ActionButton extends Field
     }
 
     /**
-     * Hide button.
-     *
-     * @param callable
-     */
-    public function hide($callback)
-    {
-        return $this->withMeta(['hidden' => call_user_func($callback)]);
-    }
-
-    /**
      * Enable loading animation. 
      *
      * @param $callback
